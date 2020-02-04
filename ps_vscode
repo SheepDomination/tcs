@@ -1,9 +1,6 @@
 $parentFolder = Convert-Path .
 $TopParent = (Get-Item $parentFolder).parent.parent
 if ($TopParent -match " ") {
-    param (
-        [string] $TopParent
-        Write-Host . 'C:\Custom Program Settings\EXRTools\exrdisplay.exe' $spaceInString 
-    )
-    }
-
+    param ([string] $TopParent)
+    Write-Host . 'C:\Custom Program Settings\EXRTools\exrdisplay.exe' $spaceInString 
+}
